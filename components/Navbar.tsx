@@ -6,7 +6,6 @@ import Dropdown from "./Dropdown";
 import Modal from "./Modal";
 import Link from "next/link";
 import { FiUser, FiMenu, FiX } from "react-icons/fi";
-import router from "next/router";
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -32,18 +32,29 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-white">Get Started</h3>
             <ul className="mt-3 space-y-2">
-              {["Ride with iPick", "Become a Driver", "Safety Measures"].map(
-                (text, index) => (
-                  <li key={index}>
-                    <a
-                      href={`/${text.toLowerCase().replace(/\s/g, "-")}`}
-                      className="text-gray-100 hover:text-gray-400 transition duration-300"
-                    >
-                      {text}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                { text: "Ride with iPick", href: "/" },
+                {
+                  text: "Become a Driver",
+                  href: "https://portal.ipick.ph/index",
+                },
+                { text: "Safety Measures", href: "/safety-measures" },
+              ].map(({ text, href }, index) => (
+                <li key={index}>
+                  <a
+                    href={href}
+                    target={href.startsWith("http") ? "_blank" : "_self"}
+                    rel={
+                      href.startsWith("http")
+                        ? "noopener noreferrer"
+                        : undefined
+                    }
+                    className="text-gray-100 hover:text-gray-400 transition duration-300"
+                  >
+                    {text}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -51,7 +62,7 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-semibold text-white">Support</h3>
             <ul className="mt-3 space-y-2">
-              {["Help Center", "Terms & Conditions", "Privacy Policy"].map(
+              {["Help Centre", "Terms of Service", "Privacy Policy"].map(
                 (text, index) => (
                   <li key={index}>
                     <a
