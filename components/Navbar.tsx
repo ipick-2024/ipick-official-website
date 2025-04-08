@@ -84,9 +84,8 @@ const Navbar: React.FC = () => {
           backgroundColor: "rgba(73, 73, 73, 0.36)",
           backdropFilter: "blur(5px)",
         }}
-        className={`text-white p-4 fixed top-0 w-full z-50 transition-transform duration-300 ${
-          isVisible ? "translate-y-0" : "-translate-y-full"
-        }`}
+        className={`text-white p-4 fixed top-0 w-full z-50 transition-transform duration-300 ${isVisible ? "translate-y-0" : "-translate-y-full"
+          }`}
       >
         <div className="container mx-auto flex justify-between items-center">
           {/* Brand Name */}
@@ -103,7 +102,7 @@ const Navbar: React.FC = () => {
           </button>
 
           {/* Desktop Menu (Centered Links) */}
-          <ul className="hidden md:flex space-x-6 absolute left-1/2 transform -translate-x-1/2">
+          <ul className="hidden md:flex space-x-6">
             <li className="hover:text-gray-300 font-semibold transition">
               <button
                 onClick={() => {
@@ -126,6 +125,7 @@ const Navbar: React.FC = () => {
                       description:
                         "Our service covers multiple districts in Metro Manila.",
                       hours: "Monday-Sunday: 8 AM - 8 PM",
+                      image: "/assets/metro-manila.png",
                       coordinates: {
                         latitude: 14.5995,
                         longitude: 120.9842,
@@ -141,6 +141,7 @@ const Navbar: React.FC = () => {
                       description:
                         "Serving the scenic Tagaytay area with our premium services.",
                       hours: "Monday-Sunday: 9 AM - 7 PM",
+                      image: "/assets/tagaytay.png",
                       coordinates: {
                         latitude: 14.1096,
                         longitude: 120.9344,
@@ -153,10 +154,11 @@ const Navbar: React.FC = () => {
                   onClick: () =>
                     openLocationModal({
                       title: "Quezon City - Main Office",
-                      address: "123 Main Street, Quezon City",
+                      address: "34 Malakas St, Diliman, Quezon City, 1114 Metro Manila",
                       description:
                         "Our primary headquarters and central operations hub.",
                       hours: "Weekdays: 9 AM - 6 PM, Weekends: Closed",
+                      image: "/assets/quezon-city.png",
                       coordinates: {
                         latitude: 14.6507,
                         longitude: 121.0388,
@@ -172,6 +174,7 @@ const Navbar: React.FC = () => {
                       description:
                         "Our satellite office in the heart of Bonifacio Global City.",
                       hours: "Weekdays: 8 AM - 5 PM, Weekends: By Appointment",
+                      image: "/assets/bonifacio.png",
                       coordinates: {
                         latitude: 14.5547,
                         longitude: 121.0484,
@@ -186,6 +189,7 @@ const Navbar: React.FC = () => {
                       address: "789 Business Road, Montalban Rizal",
                       description: "Expanding our services to Montalban Rizal.",
                       hours: "Monday-Sunday: 10 AM - 6 PM",
+                      image: "/assets/montalban.png",
                       coordinates: {
                         latitude: 14.6507,
                         longitude: 121.1854,
