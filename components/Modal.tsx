@@ -1,6 +1,6 @@
-import React, { useMemo } from "react";
-import { FiX } from "react-icons/fi";
-import { GoogleMap, useLoadScript, Marker } from "@react-google-maps/api";
+import React from "react";
+import { FiX, FiMapPin } from "react-icons/fi";
+
 interface ModalProps {
   isOpen: boolean;
   onClose: () => void;
@@ -18,43 +18,24 @@ interface ModalProps {
 }
 
 const LocationModal: React.FC<ModalProps> = ({ isOpen, onClose, location }) => {
-  // Default coordinates if not provided (centered on Philippines)
-  const defaultCoordinates = {
-    latitude: 14.5995,
-    longitude: 120.9842,
-  };
-
-  const mapCoordinates = location.coordinates || defaultCoordinates;
-
-  // Use useMemo to memoize the center and libraries
-  const center = useMemo(
-    () => ({
-      lat: mapCoordinates.latitude,
-      lng: mapCoordinates.longitude,
-    }),
-    [mapCoordinates]
-  );
-
-  const libraries = useMemo(() => ["places"], []);
-
-  // Use useLoadScript hook
-  const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey:
-      process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY ||
-      "AIzaSyBTVoAYJ7vxQ5cSiIRYDc7_b0nJB-X6QR8",
-    libraries: libraries as any,
-  });
-
   if (!isOpen) return null;
 
-  if (loadError) return <div>Error loading maps</div>;
-  if (!isLoaded) return <div>Loading...</div>;
+  // Function to open address in Google Maps
+  const openInGoogleMaps = () => {
+    if (location.address) {
+      const encodedAddress = encodeURIComponent(location.address);
+      window.open(`https://www.google.com/maps/search/?api=1&query=${encodedAddress}`, '_blank');
+    } else if (location.coordinates) {
+      const { latitude, longitude } = location.coordinates;
+      window.open(`https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`, '_blank');
+    }
+  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Overlay */}
       <div
-        className="absolute inset-0 bg-opacity-50 backdrop-blur-lg"
+        className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-lg"
         onClick={onClose}
       ></div>
       {/* Modal Content */}
@@ -67,46 +48,36 @@ const LocationModal: React.FC<ModalProps> = ({ isOpen, onClose, location }) => {
           <FiX size={20} />
         </button>
         <div className="flex flex-col md:flex-row">
-          {/* Map Section */}
-          <div className="w-full md:w-1/2 h-64 md:h-[500px]">
-            <GoogleMap
-              mapContainerStyle={{ width: "100%", height: "100%" }}
-              center={center}
-              zoom={12}
-              options={{
-                disableDefaultUI: true,
-                zoomControl: false,
-                streetViewControl: false, 
-                mapTypeControl: false,
-                fullscreenControl: false,
-              }}
-            >
-              <Marker
-                position={center}
-                icon={{
-                  url: './assets/marker-orange.png', // Path to the custom marker
-                  scaledSize: new window.google.maps.Size(40, 40), // Resizes the marker
-                }}
-              />
-            </GoogleMap>
+          {/* Location Image Section */}
+          <div className="w-full md:w-1/2 h-64 md:h-[500px] relative">
+            <img
+              src={location.image || "/assets/default-location.jpg"}
+              alt={location.title || "Location"}
+              className="w-full h-full object-cover"
+            />
+            {location.coordinates && (
+              <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
+                  <FiMapPin size={20} className="text-white" />
+                </div>
+              </div>
+            )}
           </div>
           {/* Location Details */}
           <div className="w-full md:w-1/2 p-6 flex flex-col">
             <h3 className="text-xl font-semibold text-gray-900 mb-4">
               {location.title}
             </h3>
-            {location.image && (
-              <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
-                <img
-                  src={location.image}
-                  alt={location.title}
-                  className="object-cover w-full h-full"
-                />
-              </div>
-            )}
             {location.address && (
-              <p className="text-gray-600 mb-2">
-                <strong>Address:</strong> {location.address}
+              <p className="text-gray-600 mb-2 flex items-center">
+                <strong className="mr-1">Address:</strong>
+                <button
+                  onClick={openInGoogleMaps}
+                  className="text-blue-600 hover:text-blue-800 hover:underline inline-flex items-center"
+                >
+                  {location.address}
+                  <FiMapPin size={14} className="ml-1" />
+                </button>
               </p>
             )}
             {location.hours && (
