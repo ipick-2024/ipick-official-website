@@ -35,7 +35,7 @@ const LocationModal: React.FC<ModalProps> = ({ isOpen, onClose, location }) => {
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       {/* Overlay */}
       <div
-        className="absolute inset-0 bg-black bg-opacity-50 backdrop-blur-lg"
+        className="absolute inset-0 bg-opacity-50 backdrop-blur-lg"
         onClick={onClose}
       ></div>
       {/* Modal Content */}
@@ -57,9 +57,7 @@ const LocationModal: React.FC<ModalProps> = ({ isOpen, onClose, location }) => {
             />
             {location.coordinates && (
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-                <div className="w-8 h-8 bg-orange-500 rounded-full flex items-center justify-center shadow-lg">
-                  <FiMapPin size={20} className="text-white" />
-                </div>
+                <img src="/assets/marker-orange.png" alt="" className="w-10" />
               </div>
             )}
           </div>

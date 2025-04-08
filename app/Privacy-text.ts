@@ -1,7 +1,7 @@
-export const texts = {
-    'privacy-notice': {
-        'title': 'Personal Data',
-        'content': `IPICK collects the following personal information (Personal Data) which is defined as any information which can be used to identify you or from which you are identifiable, from our consumers, agents, vendors, suppliers, partners (driver, delivery and merchant partners), contractors and service providers. This includes but is not limited to your:
+export const texts: any = {
+  'privacy-notice': {
+    'title': 'Personal Data',
+    'content': `IPICK collects the following personal information (Personal Data) which is defined as any information which can be used to identify you or from which you are identifiable, from our consumers, agents, vendors, suppliers, partners (driver, delivery and merchant partners), contractors and service providers. This includes but is not limited to your:
   
   1. Full Name
   2. Nationality
@@ -27,11 +27,11 @@ export const texts = {
   1. When it is required for us to comply with legal requirements;
   2. When it is required for us to enter into a contract with you; and
   3. For IPICK's legitimate interests or the legitimate interests of any other persons, including but within the purposes set forth in this Privacy Notice.`
-    },
+  },
 
-    'personal-data-collection': {
-        'title': 'Personal Data Collection',
-        'content': `IPICK collects and might combine Personal Data about you in the following means below:
+  'personal-data-collection': {
+    'title': 'Personal Data Collection',
+    'content': `IPICK collects and might combine Personal Data about you in the following means below:
   
   1. Personal Data provided to IPICK; IPICK collects your Personal Data when you provide it to us. By way of:
   
@@ -68,11 +68,11 @@ export const texts = {
   • When our users add you as a recipient or beneficiary of any use of our Services;
   • When you use our in-app chat; and
   • Marketing services providers or partners.`
-    },
+  },
 
-    'sensitive-personal-data': {
-        'title': 'Sensitive Personal Data',
-        'content': `Some of the Personal Data that IPICK collects may be sensitive in nature. This may include Personal Data relative to the following:
+  'sensitive-personal-data': {
+    'title': 'Sensitive Personal Data',
+    'content': `Some of the Personal Data that IPICK collects may be sensitive in nature. This may include Personal Data relative to the following:
   
   • race, 
   • national ID information, 
@@ -87,37 +87,37 @@ export const texts = {
   you are required to furnish any documentation or information to us for any Purpose which may contain such sensitive 
   Personal Data (which is not required for that Purpose), you agree to redact such sensitive Personal Data before providing such 
   documentation or information to us.`
-    },
+  },
 
-    'personal-data-of-other': {
-        'title': 'When you provide Personal Data of other individuals to IPICK',
-        'content': `In some situations, you may provide Personal Data of other individuals (such as your spouse, family members or friends) to us. 
+  'personal-data-of-other': {
+    'title': 'When you provide Personal Data of other individuals to IPICK',
+    'content': `In some situations, you may provide Personal Data of other individuals (such as your spouse, family members or friends) to us. 
   For example, you may add them as your emergency contact, when you use the in-app chat or when you add them as recipients 
   or beneficiaries of any use of our Services. If you provide us with their Personal Data, you represent and warrant that you have 
   obtained their consent for their Personal Data to be collected, used and disclosed as set out in this Privacy Notice.`
-    },
+  },
 
-    'personal-data-of-minors': {
-        'title': 'Personal Data of Minors',
-        'content': `It is the duty and responsibility of parents not to allow minors under their care to submit Personal Data to IPICK. In the event 
+  'personal-data-of-minors': {
+    'title': 'Personal Data of Minors',
+    'content': `It is the duty and responsibility of parents not to allow minors under their care to submit Personal Data to IPICK. In the event 
   that such Personal Data of a minor is disclosed to IPICK, parent's hereby consent to the processing of the minor's Personal Data 
   and accept and agree to be bound by this Notice and take responsibility for his or her actions.`
-    },
+  },
 
-    'use-of-personal-data': {
-        'title': 'Use of Personal Data',
-        'content': `IPICK may use your Personal Data for the following purposes set out in the list below.  
+  'use-of-personal-data': {
+    'title': 'Use of Personal Data',
+    'content': `IPICK may use your Personal Data for the following purposes set out in the list below.  
   
   • Providing services and features
   • Safety and security
   • User support
   • Research and development and security
   • Legal purposes`
-    },
+  },
 
-    'disclosure-of-personal-data': {
-        'title': 'Disclosure of Personal Data',
-        'content': `IPICK needs to share Personal Data with various parties for the above-mentioned Purposes. These parties include:
+  'disclosure-of-personal-data': {
+    'title': 'Disclosure of Personal Data',
+    'content': `IPICK needs to share Personal Data with various parties for the above-mentioned Purposes. These parties include:
   
   • Other users
   • With third parties
@@ -128,20 +128,20 @@ export const texts = {
   • With IPICK's legal advisors
   • With governmental authorities
   • Business transfers`
-    },
+  },
 
-    'retention-of-personal-data': {
-        'title': 'Retention of Personal Data',
-        'content': `IPICK retains your Personal Data for the period necessary to fulfill the Purposes outlined in this Privacy Notice unless a longer 
+  'retention-of-personal-data': {
+    'title': 'Retention of Personal Data',
+    'content': `IPICK retains your Personal Data for the period necessary to fulfill the Purposes outlined in this Privacy Notice unless a longer 
   retention period is required or allowed by law. Once your Personal Data is no longer necessary for the Services or Purposes, or 
   we no longer have a legal or business purpose for retaining your Personal Data, we take steps to erase, destroy, anonymize or 
   prevent access or use of such Personal Data for any purpose other than compliance with this Privacy Notice, or for purposes of 
   safety, security, fraud prevention and detection, in accordance with the requirements of applicable laws.`
-    },
+  },
 
-    'cookies': {
-        'title': 'Cookies',
-        'content': `IPICK and third parties with whom we partner, may use cookies, web beacons, tags, scripts, local shared objects such as 
+  'cookies': {
+    'title': 'Cookies',
+    'content': `IPICK and third parties with whom we partner, may use cookies, web beacons, tags, scripts, local shared objects such as 
   HTML5, advertising identifiers and similar technologies in connection with your use of the Websites and Apps, which may be 
   persistent or stored only during an individual session on your browsers or devices.
   
@@ -169,22 +169,22 @@ export const texts = {
   disable our use of mobile identifiers (such as Apple's IDFA or Google's GAID) and the ability to track you across apps and 
   websites owned by other companies by adjusting the settings available on your mobile devices. Through adjusting the 
   settings on your device, you can typically reset, delete, limit and/or otherwise restrict the use of such mobile identifiers.`
-    },
+  },
 
-    'protection-of-personal-data': {
-        'title': 'Protection of Personal Data',
-        'content': `IPICK will take reasonable legal, organizational and technical measures to ensure that your Personal Data is protected. This 
+  'protection-of-personal-data': {
+    'title': 'Protection of Personal Data',
+    'content': `IPICK will take reasonable legal, organizational and technical measures to ensure that your Personal Data is protected. This 
   includes measures to prevent Personal Data from getting lost, or used or accessed in an unauthorized way. We limit access 
   to your Personal Data to our employees on a need to know basis. Those processing your Personal Data will only do so in an 
   authorized manner and are required to treat your information with confidentiality. Please understand that the transmission of 
   information via the internet is not completely secure. Although we will do our best to protect your Personal Data, we cannot 
   guarantee the security of your Personal Data transmitted through any online means, therefore, any transmission remains at 
   your own risk.`
-    },
+  },
 
-    'your-rights': {
-        'title': 'Your Rights with Respect to Personal Data',
-        'content': `In accordance with applicable laws and regulations, you may be entitled to:
+  'your-rights': {
+    'title': 'Your Rights with Respect to Personal Data',
+    'content': `In accordance with applicable laws and regulations, you may be entitled to:
   
   • inquire about the processing of your Personal Data and be provided with a copy of it;
   • in some cases, request the correction and/or deletion of your Personal Data;
@@ -207,20 +207,20 @@ export const texts = {
   We will screen and verify all requests beforehand. In order to verify your identity and/or authority to make the request, we may 
   require you to provide supporting information or documentation to corroborate the request. Once verified, we will give effect 
   to your request within the timelines prescribed by applicable laws.`
-    },
+  },
 
-    'amendments-and-updates': {
-        'title': 'Amendments and Updates',
-        'content': `IPICK may modify, update or amend the terms in this Privacy Notice at any time. Such amendments shall be notified to you
+  'amendments-and-updates': {
+    'title': 'Amendments and Updates',
+    'content': `IPICK may modify, update or amend the terms in this Privacy Notice at any time. Such amendments shall be notified to you
   through the Apps and/ or other appropriate means at least five (5) business days before the effective date. It is your
   responsibility to review the Privacy Notice regularly. Your continued use of the Apps, Websites or Services, or continuing to
   communicate or engage with IPICK following the effective date of the modifications, updates or amendments to this Privacy
   Notice, whether or not reviewed by you, shall constitute your agreement to be bound by such amendments.`
-    },
+  },
 
-    'how-to-contact-us': {
-        'title': 'How to Contact Us',
-        'content': `If you have any queries about this Notice or would like to exercise your rights set out in this Notice, please fill-out the form provided or directly contact our Data Protection Officer:
+  'how-to-contact-us': {
+    'title': 'How to Contact Us',
+    'content': `If you have any queries about this Notice or would like to exercise your rights set out in this Notice, please fill-out the form provided or directly contact our Data Protection Officer:
   
   IPICK DATA PROTECTION OFFICER
   
@@ -229,5 +229,5 @@ export const texts = {
   Contact Number: (+639) 279577257
   
   Email: gaygrepson@gmail.com`
-    }
+  }
 };

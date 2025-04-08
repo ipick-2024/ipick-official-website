@@ -368,7 +368,7 @@ const Navbar: React.FC = () => {
               <li>
                 <button
                   onClick={() => {
-                    window.location.href = "/help-centre";
+                    window.location.href = "/help-center";
                   }}
                   className="text-white hover:text-gray-300"
                 >
