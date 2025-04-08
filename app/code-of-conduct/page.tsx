@@ -1,5 +1,5 @@
 "use client";
-import "@fontsource/montserrat/900.css";
+import "@fontsource/montserrat/700.css";
 import { useState } from "react";
 import { codeOfConduct } from "../coc";
 
@@ -12,7 +12,7 @@ export default function CodeOfConduct() {
 
   return (
     <div className="mx-auto px-8 py-8 bg-white h-full pt-30">
-      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8 font-montserrat">
+      <h1 className="text-3xl md:text-4xl font-bold text-gray-800 text-center mb-8">
         Code of Conduct
       </h1>
 

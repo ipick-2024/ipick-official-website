@@ -1,6 +1,6 @@
 import Image from "next/image";
 import StepsComponent from "../components/StepsComponent";
-import "@fontsource/montserrat/900.css";
+import "@fontsource/montserrat/700.css";
 import FeatureCard from "@/components/FeatureCard";
 
 const features = [
@@ -45,7 +45,7 @@ export default function Home() {
         <div className="h-[70vh] absolute inset-0 bg-black opacity-80"></div>
         <div className="relative z-10">
           {/* Main Heading */}
-          <h1 className="font-[900] text-4xl md:text-5xl lg:text-6xl font-extrabold text-white text-shadow-black text-center px-4">
+          <h1 className="font-[900] text-4xl md:text-5xl lg:text-6xl text-white text-shadow-black text-center px-4">
             <span className="animate-gradient">iPick. </span>
             Bringing you to Places.
           </h1>

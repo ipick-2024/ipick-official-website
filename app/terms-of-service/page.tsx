@@ -1,6 +1,6 @@
 "use client";
 
-import "@fontsource/montserrat/900.css";
+import "@fontsource/montserrat/700.css";
 import { useState } from "react";
 import { tos } from "../TOS-text";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
@@ -12,7 +12,9 @@ export default function PrivacyPolicy() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="flex h-screen mt-20">
+    <div className="flex h-screen pt-19.5"
+      style={{ backgroundImage: "url('/assets/car.png')" }}
+    >
       {/* Left Column */}
       <div
         className={`absolute md:relative z-10 bottom-0 top-0 bg-gray-300 p-4 overflow-y-auto transition-transform transform h-full ${isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"

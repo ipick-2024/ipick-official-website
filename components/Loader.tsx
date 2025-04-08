@@ -10,16 +10,15 @@ const Loader = () => {
     setTimeout(() => {
       setFadeOut(true);
       setTimeout(() => setLoading(false), 500);
-    }, 1500);
+    }, 500);
   }, []);
 
   if (!loading) return null;
 
   return (
     <div
-      className={`fixed inset-0 bg-gray-100 flex items-center justify-center transition-opacity duration-500 z-50 ${
-        fadeOut ? "opacity-0" : "opacity-100"
-      }`}
+      className={`fixed inset-0 bg-gray-100 flex items-center justify-center transition-opacity duration-500 z-50 ${fadeOut ? "opacity-0" : "opacity-100"
+        }`}
     >
       <div className="scene">
         <div className="cube animate-spinCube">
