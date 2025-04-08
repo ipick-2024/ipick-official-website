@@ -1,6 +1,6 @@
 "use client";
 
-import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/900.css";
 import { useState } from "react";
 import { texts } from "../Privacy-text";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";

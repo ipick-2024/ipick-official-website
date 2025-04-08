@@ -1,4 +1,5 @@
 import React from 'react';
+import "@fontsource/montserrat/900.css";
 
 export default function HelpCentre() {
   return (

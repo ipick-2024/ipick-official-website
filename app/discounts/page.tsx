@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/900.css";
 import "@fontsource/montserrat/400.css";
 import { FiUser, FiMail, FiPhone, FiUpload, FiCheck, FiAlertCircle } from "react-icons/fi";
 

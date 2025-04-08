@@ -1,6 +1,6 @@
 import Image from "next/image";
 import StepsComponent from "../components/StepsComponent";
-import "@fontsource/montserrat/700.css";
+import "@fontsource/montserrat/900.css";
 import FeatureCard from "@/components/FeatureCard";
 
 const features = [
