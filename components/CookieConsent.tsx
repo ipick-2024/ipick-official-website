@@ -27,7 +27,7 @@ const CookieConsent = () => {
   return (
     showBanner && (
       <div
-        className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 bg-gray-900 text-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row justify-between items-center opacity-0 animate-fade-in"
+        className="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 bg-gray-900 text-white p-4 rounded-lg shadow-lg flex flex-col md:flex-row justify-between items-center opacity-0 animate-fade-in z-50 transition duration-300"
         role="alert"
         aria-live="polite"
       >
