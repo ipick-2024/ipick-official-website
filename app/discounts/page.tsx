@@ -128,7 +128,7 @@ export default function Discounts() {
     >
       {/* Background elements */}
       <div
-        className="absolute inset-0 z-0 opacity-50"
+        className="absolute inset-0 z-0 opacity-60"
         style={{
           backgroundImage: "url('/assets/car.png')",
           backgroundSize: "cover",

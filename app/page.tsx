@@ -42,18 +42,13 @@ export default function Home() {
         className="h-[70vh] flex flex-col justify-center items-center text-center px-4 bg-cover bg-center bg-fixed"
         style={{ backgroundImage: "url('/assets/car.png')" }}
       >
-        <div className="h-[70vh] absolute inset-0 bg-black opacity-80"></div>
+        <div className="h-[70vh] absolute inset-0 bg-black opacity-20"></div>
         <div className="relative z-10">
           {/* Main Heading */}
           <h1 className="font-[900] text-4xl md:text-5xl lg:text-6xl text-white text-shadow-black text-center px-4">
             <span className="animate-gradient">iPick. </span>
             Bringing you to Places.
           </h1>
-
-          {/* Subtext */}
-          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-green-700 font-bold mt-4 text-center px-4">
-            Anytime, Anywhere, iPick is There.
-          </p>
 
           {/* Download Buttons */}
           <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mt-6">

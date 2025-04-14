@@ -116,22 +116,22 @@ const Navbar: React.FC = () => {
               title="Locations"
               menuItems={[
                 { label: "Area Availability", isHeader: true },
-                {
-                  label: "Metro Manila",
-                  onClick: () =>
-                    openLocationModal({
-                      title: "Metro Manila",
-                      address: "Various locations across Metro Manila",
-                      description:
-                        "Our service covers multiple districts in Metro Manila.",
-                      hours: "Monday-Sunday: 8 AM - 8 PM",
-                      image: "/assets/metro-manila.png",
-                      coordinates: {
-                        latitude: 14.5995,
-                        longitude: 120.9842,
-                      },
-                    }),
-                },
+                // {
+                //   label: "Metro Manila",
+                //   onClick: () =>
+                //     openLocationModal({
+                //       title: "Metro Manila",
+                //       address: "Various locations across Metro Manila",
+                //       description:
+                //         "Our service covers multiple districts in Metro Manila.",
+                //       hours: "Monday-Sunday: 8 AM - 8 PM",
+                //       image: "/assets/metro-manila.png",
+                //       coordinates: {
+                //         latitude: 14.5995,
+                //         longitude: 120.9842,
+                //       },
+                //     }),
+                // },
                 {
                   label: "Tagaytay City",
                   onClick: () =>
@@ -165,37 +165,37 @@ const Navbar: React.FC = () => {
                       },
                     }),
                 },
-                {
-                  label: "BGC - Satelite Office",
-                  onClick: () =>
-                    openLocationModal({
-                      title: "BGC - Satellite Office",
-                      address: "456 Corporate Plaza, BGC, Taguig",
-                      description:
-                        "Our satellite office in the heart of Bonifacio Global City.",
-                      hours: "Weekdays: 8 AM - 5 PM, Weekends: By Appointment",
-                      image: "/assets/bonifacio.png",
-                      coordinates: {
-                        latitude: 14.5547,
-                        longitude: 121.0484,
-                      },
-                    }),
-                },
-                {
-                  label: "Montalban Rizal",
-                  onClick: () =>
-                    openLocationModal({
-                      title: "Montalban Rizal",
-                      address: "789 Business Road, Montalban Rizal",
-                      description: "Expanding our services to Montalban Rizal.",
-                      hours: "Monday-Sunday: 10 AM - 6 PM",
-                      image: "/assets/montalban.png",
-                      coordinates: {
-                        latitude: 14.6507,
-                        longitude: 121.1854,
-                      },
-                    }),
-                },
+                // {
+                //   label: "BGC - Satelite Office",
+                //   onClick: () =>
+                //     openLocationModal({
+                //       title: "BGC - Satellite Office",
+                //       address: "456 Corporate Plaza, BGC, Taguig",
+                //       description:
+                //         "Our satellite office in the heart of Bonifacio Global City.",
+                //       hours: "Weekdays: 8 AM - 5 PM, Weekends: By Appointment",
+                //       image: "/assets/bonifacio.png",
+                //       coordinates: {
+                //         latitude: 14.5547,
+                //         longitude: 121.0484,
+                //       },
+                //     }),
+                // },
+                // {
+                //   label: "Montalban Rizal",
+                //   onClick: () =>
+                //     openLocationModal({
+                //       title: "Montalban Rizal",
+                //       address: "789 Business Road, Montalban Rizal",
+                //       description: "Expanding our services to Montalban Rizal.",
+                //       hours: "Monday-Sunday: 10 AM - 6 PM",
+                //       image: "/assets/montalban.png",
+                //       coordinates: {
+                //         latitude: 14.6507,
+                //         longitude: 121.1854,
+                //       },
+                //     }),
+                // },
               ]}
             />
             <Dropdown
