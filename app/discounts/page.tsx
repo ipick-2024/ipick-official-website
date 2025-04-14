@@ -5,7 +5,13 @@ import "@fontsource/montserrat/400.css";
 import { FiUser, FiMail, FiPhone, FiUpload, FiCheck, FiAlertCircle } from "react-icons/fi";
 
 export default function Discounts() {
-  const [form, setForm] = useState({
+  const [form, setForm] = useState<{
+    name: string;
+    email: string;
+    mobile: string;
+    idType: string;
+    file: File | null;
+  }>({
     name: "",
     email: "",
     mobile: "",
@@ -13,7 +19,7 @@ export default function Discounts() {
     file: null,
   });
 
-  const [errors, setErrors] = useState({});
+  const [errors, setErrors] = useState<{ [key: string]: string | null }>({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [filePreview, setFilePreview] = useState(null);
@@ -58,8 +64,8 @@ export default function Discounts() {
     }
   };
 
-  const handleFileChange = (e: { target: { files: any[]; }; }) => {
-    const file = e.target.files[0];
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+      const file = e.target.files && e.target.files[0];
     if (file) {
       setForm((prevForm) => ({ ...prevForm, file }));
 
@@ -271,7 +277,7 @@ export default function Discounts() {
                 <label htmlFor="file-upload" className="cursor-pointer">
                   {filePreview ? (
                     <div className="flex flex-col items-center">
-                      {form.file.type.startsWith('image/') ? (
+                      {form.file && form.file.type.startsWith('image/') ? (
                         <img
                           src={filePreview}
                           alt="ID Preview"
@@ -282,9 +288,9 @@ export default function Discounts() {
                           <FiUpload className="mx-auto text-green-700 text-xl" />
                         </div>
                       )}
-                      <span className="text-sm text-green-700 font-medium">{form.file.name}</span>
+                      <span className="text-sm text-green-700 font-medium">{form.file?.name || "No file selected"}</span>
                       <span className="text-xs text-gray-500 mt-1">
-                        {(form.file.size / (1024 * 1024)).toFixed(2)} MB
+                        {form.file && ((form.file.size / (1024 * 1024)).toFixed(2))} MB
                       </span>
                     </div>
                   ) : (

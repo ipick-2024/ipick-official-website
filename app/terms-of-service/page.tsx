@@ -7,7 +7,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 
 export default function PrivacyPolicy() {
   // Initialize with the first key from the tos object
-  const [selectedSection, setSelectedSection] = useState(Object.keys(tos)[0]);
+  const [selectedSection, setSelectedSection] = useState<keyof typeof tos>(Object.keys(tos)[0] as keyof typeof tos);
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -38,11 +38,11 @@ export default function PrivacyPolicy() {
                 className={`p-2 cursor-pointer text-black text-base transition-transform transform ${selectedSection === key ? "bg-gray-300 scale-105 font-semibold" : "hover:scale-105"
                   }`}
                 onClick={() => {
-                  setSelectedSection(key);
+                  setSelectedSection(key as keyof typeof tos);
                   setIsMobileMenuOpen(false); // Close menu on selection
                 }}
               >
-                {tos[key].title}
+                {tos[key as keyof typeof tos].title}
               </li>
             ))}
           </ul>

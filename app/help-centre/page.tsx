@@ -6,7 +6,7 @@ export default function HelpCentre() {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-6 pt-25">
       <div className="w-full max-w-5xl bg-white shadow-2xl rounded-xl overflow-hidden grid md:grid-cols-2 gap-8">
         {/* Information Section */}
-        <div className="p-8 bg-gradient-to-br bg-green-600 text-white flex flex-col justify-center">
+        <div className="p-8 bg-gradient-to-br bg-green-700 text-white flex flex-col justify-center">
           <h1 className="text-3xl font-bold mb-6">Report and Resolution Center</h1>
 
           <p className="mb-6 text-gray-200">
@@ -152,7 +152,7 @@ export default function HelpCentre() {
 
             <button
               type="submit"
-              className="w-full p-4 bg-green-600 text-white font-bold rounded-md hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
+              className="w-full p-4 bg-green-700 text-white font-bold rounded-md hover:bg-green-700 transition duration-300 ease-in-out transform hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50"
             >
               Submit Report
             </button>
