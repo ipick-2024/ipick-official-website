@@ -1,10 +1,10 @@
 {
   "/_not-found/page": "/_not-found",
   "/favicon.ico/route": "/favicon.ico",
-  "/discounts/page": "/discounts",
   "/help-centre/page": "/help-centre",
+  "/discounts/page": "/discounts",
   "/code-of-conduct/page": "/code-of-conduct",
   "/privacy-policy/page": "/privacy-policy",
-  "/page": "/",
-  "/terms-of-service/page": "/terms-of-service"
+  "/terms-of-service/page": "/terms-of-service",
+  "/page": "/"
 }

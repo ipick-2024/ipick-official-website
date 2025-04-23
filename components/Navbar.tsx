@@ -92,7 +92,7 @@ const Navbar: React.FC = () => {
           <button onClick={() => handleScroll("home")}>
             <div className="bg-green-700 px-2 py-2 rounded-full transition">
               <Image
-                src="/favicon.ico"
+                src="/ipick.svg"
                 alt="iPick Logo"
                 width={30}
                 height={30}
