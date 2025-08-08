@@ -45,7 +45,7 @@ export const texts: any = {
   
   2. When IPICK's Services are Availed of: Personal Data may be collected through the normal operation or use of IPICK's Apps, Websites and Services like:
   
-  • Location Information;
+  • Location Information, such as your real-time or approximate location collected via GPS, Wi-Fi, and mobile networks when the app is running in the foreground (and, with permission, in the background), for purposes such as enabling services, navigation, safety, fraud detection, and analytics;
   • Feedback, Ratings and Compliments;
   • Transaction Information such as but not limited to payment method;
   • Device information 
