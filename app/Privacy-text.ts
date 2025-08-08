@@ -45,9 +45,9 @@ export const texts: any = {
   
   2. When IPICK's Services are Availed of: Personal Data may be collected through the normal operation or use of IPICK's Apps, Websites and Services like:
   
-  • Location Information, such as your real-time or approximate location collected via GPS, Wi-Fi, and mobile networks  when the app is running in the foreground or, with your permission, in the background. This information is collected to support features including service matching (e.g., driver and delivery partner assignment), real-time navigation, safety and emergency support, route optimization, fraud detection, and analytics. Location data may also be collected when the app is closed or not in use, if background permissions are granted, to ensure uninterrupted trip tracking and delivery functionality.;
-  • Feedback, Ratings and Compliments;
-  • Transaction Information such as but not limited to payment method;
+  • Location Information, such as your real-time or approximate location collected via GPS, Wi-Fi, and mobile networks  when the app is running in the foreground or, with your permission, in the background. This information is collected to support features including service matching (e.g., driver and delivery partner assignment), real-time navigation, safety and emergency support, route optimization, fraud detection, and analytics. Location data may also be collected when the app is closed or not in use, if background permissions are granted, to ensure uninterrupted trip tracking and delivery functionality
+  • Feedback, Ratings and Compliments
+  • Transaction Information such as but not limited to payment method
   • Device information 
   • Driving Performance Information 
   • Personal data in messages when you use our in-app communication features;
